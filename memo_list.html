@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>メモ一覧 - メモサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>メモ一覧</h1>
+    </header>
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="new_memo.html">新しいメモを作成</a>
+        <a href="memo_list.html">メモ一覧</a>
+    </nav>
+    <main id="memoList">
+        <!-- メモはここに追加されます -->
+    </main>
+    <footer>
+        &copy; 2024 メモサイト
+    </footer>
+    <script src="memo.js"></script>
+    <script>
+        // Get the memos from local storage
+        var memos = JSON.parse(localStorage.getItem('memos')) || [];
+
+        // Add each memo to the page
+        for (var i = 0; i < memos.length; i++) {
+            var memoContainer = document.createElement('div');
+            memoContainer.className = 'memo';
+
+            var memoContent = document.createElement('div');
+            memoContent.textContent = memos[i];
+            memoContainer.appendChild(memoContent);
+
+            document.getElementById('memoList').appendChild(memoContainer);
+        }
+    </script>
+</body>
+</html>

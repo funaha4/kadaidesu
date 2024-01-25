@@ -1,0 +1,44 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    height: calc(100vh - 120px); /* viewport height minus header, nav, and footer heights */
+    overflow-y: auto; /* enable vertical scrolling */
+}
+
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.memo {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

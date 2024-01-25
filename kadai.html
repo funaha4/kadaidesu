@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>メモサイト</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .memo {
+            background-color: #fff;
+            color: #000;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>メモサイト</h1>
+    </header>
+    <nav>
+        <a href="#">ホーム</a>
+        <a href="#">新しいメモを作成</a>
+    </nav>
+    <main>
+        <div class="section">
+            <h2>メモ一覧</h2>
+            <div class="memo">
+                <h3>メモタイトル</h3>
+                <p>ここにメモの内容を追加します。</p>
+            </div>
+            <div class="memo">
+                <h3>別のメモタイトル</h3>
+                <p>ここに別のメモの内容を追加します。</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 メモサイト
+    </footer>
+</body>
+</html>
